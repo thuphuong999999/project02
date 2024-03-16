@@ -1,0 +1,241 @@
+:root{
+    --primary-color:#171100;
+    --btn-color: #FFB900;
+    --font-heading: Sen, san-serif;
+}
+* {
+    box-sizing: border-box;
+
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* common */
+a{
+    text-decoration: none;
+}
+.main-content{
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn{
+    display: inline-block;
+    min-width: 118px;
+    padding:  0 16px;
+    line-height: 50px;
+    font-weight: 600;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: var(--primary-color);
+    border-radius: 999px;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+/* header */
+.header{
+    background-color: #FFFCF4;
+}
+.header.fixed{
+    position: sticky;
+    top: -28px;
+    z-index: 1;
+}
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+    
+}
+.nav{
+    margin-left: auto;
+}
+.nav ul {
+    display: flex;
+    
+
+}
+.nav a{
+    position: relative;
+    padding: 8px 21px;
+    color: #5F5B53;
+    font-size: 1.6rem;
+
+}
+.nav a:hover,
+.nav li.active a{
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+.nav li.active a::after{
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 2px;
+    background: #171100;
+    border-radius: 1px;
+}
+.header .sign-up-btn{
+    min-width: 144px;
+}
+.header .acction{
+    margin-left: 49px;
+}
+/* hero */
+.hero{
+    padding-top: 56px;
+    background-color: #FFFCF4;
+    padding-bottom: 65px;
+
+}
+.hero .body{
+    display: flex;
+}
+.hero .media-block{
+    position: relative;
+    width: 48%;
+}
+
+.hero .media-block .img{
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+    vertical-align: bottom;
+}
+.hero-summary{
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    padding: 24px 24px;
+    width: 270px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+.hero-summary .item{
+    display: flex;
+    align-items: center;
+}
+.hero-summary .item + .item{
+    margin-top: 22px;
+}
+.hero-summary .icon{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF9E8;
+
+}
+.hero-summary .item:nth-of-type(2) .icon{
+background-color: #FCEFFF;
+}
+.hero-summary .item:nth-of-type(3) .icon{
+background: #EBEAFF;
+}
+
+
+.hero-summary .info{
+    margin-left: 16px;
+
+}
+.hero-summary .lable{
+    color: #5F5B53;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    
+}
+.hero-summary .title{
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+/* content block */
+.hero .content-block{
+    width: 52%;
+    padding: 64px 0 0 130px;
+}
+.hero .heading{
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17; /* 117.241% */
+    letter-spacing: -0.02em;
+}
+.hero .desc{
+    margin-top: 22px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    line-height: 1.67; /* 166.667% */
+}
+.hero .cta-group{
+    display: flex;
+    align-items: center;
+    margin: 38px 0 48px;
+
+}
+.hero .hero-cta{
+    min-width: 180px;
+    line-height: 48px;
+    background-color: var(--btn-color);
+}
+.hero .watch-video{
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.hero .watch-video .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+    }
+.hero .watch-video span{
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+.hero .stars{
+    margin-top: 8px;
+}
+
+.hero strong{
+    padding-right: 8px;
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 1.23;
+}
+.hero strong:last-child{
+    padding-left: 28px;
+}
+/* popular */
+.popular{
+    padding: 65px 0;
+    margin-top: 135px;
+}
